@@ -1,0 +1,74 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1 class="titulo-destaque">Previsão do Tempo 🌤️</h1>
+            <p>Consulte o clima em qualquer cidade em tempo real</p>
+        </header>
+
+
+        <form id="form-busca">
+            <input type="text" id="input-cidade" placeholder="Digite o nome de uma cidade..." required autocomplete="off">
+            <button type="submit" id="btn-buscar">Buscar</button>
+        </form>
+
+
+
+
+
+        <section id="card-clima" class="escondido">
+
+            <h2 id="nome-cidade">São Paulo, BR</h2>
+            <div class="temperatura-box">
+                <span id="temperatura">25</span>°C
+            </div>
+            <p id="descricao-clima">Céu limpo</p>
+            
+            
+            <div class="detalhes">
+
+                <div class="detalhe-item">
+
+                    <span>Umidade</span>
+                    <strong id="umidade">60%</strong>
+                </div>
+                <div class="detalhe-item">
+                    <span>Vento</span>
+                    <strong id="vento">12 km/h</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p id="mensagem-status" class="status-msg"></p>
+
+
+
+
+
+    </main>
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
